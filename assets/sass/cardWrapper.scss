@@ -1,0 +1,105 @@
+@import "variables";
+
+.main-wrap {
+
+     display: flex;
+     flex-wrap: nowrap;
+     overflow: auto;
+     padding: 0 35px;
+     justify-content: space-between;
+     align-items: center;
+     .card {
+          height: 650px;
+          min-width: 400px;
+          flex: 1;
+          border-radius: 7px;
+          margin: 0 20px;
+          color: $greyText;
+
+          .wrap-content {
+               padding: 30px 30px 20px;
+          }
+
+          &.first {
+               background: white;
+               .top-image-area {
+                    position: relative;
+                    img {
+                         border-radius: 7px 7px 0 0;
+                         width: 100%;
+                    }
+                    .category {
+                         position: absolute;
+                         top: 8%;
+                         left: 3%;
+                    }
+               }
+                    .wrap-content {
+                         .first {
+                              .inner {
+                                   h3 {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        margin-bottom: 25px;
+                                        color: $greyHeader;
+                                   }
+                                   p {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                   }
+                              }
+                         }
+                         .second {
+                              .wrap {
+                                   margin-bottom: 18px;
+                                   .fa-clock-o {
+                                   }
+                                    h5 {
+                                         font-size: 14px;
+                                         display: inline-block;
+                                         margin-left: 10px;
+                                    }
+                                    &:nth-child(2){
+                                        h5 {
+                                             margin-left: 15px;
+                                        }
+                                   }
+                              }
+                         }
+                         .third {
+                              position: relative;
+                              .img-cropper {
+                                display: inline-block;
+                                width: 63px;
+                                height: 63px;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                border: 3px solid rgba(234, 76, 255, .3);
+
+                                img {
+                                  display: inline;
+                                  margin: 0 auto;
+                                  height: 100%;
+                                  width: auto;
+                                }
+                              }
+                              .user {
+                                   display: inline-block;
+                                   position: absolute;
+                                   top: 15px;
+                                   left: 90px;
+                              }
+                         }
+                    }
+          }
+
+          &.second{
+               background: blue;
+          }
+
+          &.third {
+               background: green;
+          }
+     }
+}
