@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Events Calender</title>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<!-- <link href="css/reset.css" rel="stylesheet"> -->
+      <link href="css/main.css" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- <div class="slide-detect">
+				<div class="slide-btn"><i class="fas fa-arrow-right"></i></div>
+			</div> -->
+		<header class="box">
+				<div class="left-menu">
+					<a id="calendar" href=#><i class="far fa-calendar-alt"></i></a>
+					<div class="date-wrap">
+						<div  class="date">
+							<a href="#"><div>Feb</div></a>
+							<a href="#"><div>12</div></a>
+							<a href="#"><div>2018</div></a>
+						</div>
+							<h6>Tuesday</h6>
+					</div>
+				</div>
+				<div class="h4-wrap">
+					<h4><span class="myCal">my</span>calender</h4>
+				</div>
+				<div class="right-menu">
+					<ul>
+						<li>
+							<input type="text" class="search" name="search" placeholder="search">
+						</li>
+						<li>
+							<i class="far fa-calendar-alt"></i>
+						</li>
+						<li>
+							<i class="fa fa-list-ul" aria-hidden="true"></i>
+						</li>
+					</ul>
+				</div>
+				<nav class="responsive-nav">
+					<a class="nav-icon">
+						<i class="fas fa-bars"></i>
+					</a>
+					<ul class="right-menu-nav">
+						<li><a href="#">Calender</a></li>
+						<li><a href="#">Notebook</a></li>
+						<li><a href="#">Search</a></li>
+					</ul>
+				</nav>
+		</header>
+		<div class="inner-wrapper">
+
+		<section class="box side-bar">
+			<div class="wrap">
+				<div class="user-info">
+					<div class="img-cropper">
+						<img src="https://i.cbc.ca/1.4475188.1515182469!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/sarah-savoy.jpg" alt="user-image">
+					</div>
+					<div class="extra-info">
+						<h5>Francesca Ferry</h5>
+						<h6>Premium Plan</h6>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="category-wrapper">
+				<button class="button category" style="background: rgb(240, 167, 196)">Important</button>
+				<button class="button category" style="background: rgb(123, 176, 251)">School</button>
+				<button class="button category" style="background: rgb(240, 206, 44)">Work</button>
+				<button class="button category" style="background: rgb(134, 144, 169)">Other</button>
+			</div>
+			<button class="button add">+ Add Category</button>
+			<hr>
+			<div class="alarm-list">
+				<div class="bell">
+					<i class="fa fa-bell-o" aria-hidden="true"></i>
+					<h5>Alarms</h5>
+				</div>
+				<div class="alarm-block">
+					<div class="dot-wrapper">
+						<div class="dot fir"></div>
+					</div>
+					<div class="container">
+						<h6 class="alarm-title">Dentist appointment:<br>
+							Metro Wilanowska</h6>
+						<h6 class="time">31 Aug 2017, 22:00</h6>
+						<h6 class="rem">1st remainder: 15 min before</h6>
+						<h6 class="rem">2nd remainder: 15 min before</h6>
+					</div>
+				</div>
+				<div class="alarm-block">
+					<div class="dot-wrapper">
+						<div class="dot sec"></div>
+					</div>
+					<div class="container">
+						<h6 class="alarm-title">Brochure Design for<br>
+							Company.inc</h6>
+						<h6 class="time">8 Feb 2017, 00:00</h6>
+						<h6 class="rem">First remainder: 2 days before</h6>
+						<h6 class="rem">Second remainder: none</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="content-area-wrap">
+
+			<div class="search-area">
+				<div class="title-icon-area">
+					<div class="icon-wrap">
+						<i class="fa fa-calendar custom-icon" aria-hidden="true"></i>
+					</div>
+					<div class="right-search">
+						<h3>Manage Events</h3>
+						<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="bar">
+					<i class="fas fa-search" aria-hidden="true"></i>
+					<input type="text" name="search" class="searchbar" placeholder="Type here...">
+					<button type="button" name="button" class="search-button">Search</button>
+				</div>
+			</div>
+
+			<section class="main-wrap" >
+
+
+						<div class="card first">
+							<div class="top-image-area">
+								<img src="/public/img/mountains.jpg" alt="rocks-and-ocean">
+								<button class="button category" style="background: rgb(123, 176, 251)">School</button>
+							</div>
+							<div class="wrap-content">
+								<div class="first">
+									<div class="inner" style="height:105px;">
+										<h3>Exploring the beauty of wild cliffs</h3>
+										<p>Think about the breathtaking views, about the unfogettable moments, about the
+											memories that will stay with you forever...</p>
+									</div>
+									<hr>
+									</div>
+									<div class="second">
+										<div class="wrap">
+											<i class="fas fa-clock"></i>
+											<h5>Friday, 17th August | 08:00 AM - 04:00 PM </h5>
+										</div>
+										<div class="wrap">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<h5>Tenninson Way, Los Angelos, CA</h5>
+										</div>
+										<div class="wrap">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+											<h5>Facebook Event</h5>
+										</div>
+										<hr>
+									</div>
+									<div class="third">
+										<div class="img-cropper">
+											<img src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" alt="user-image">
+										</div>
+										<div class="user">
+											<h5>Jannette Blue</h5>
+											<h5>Host</h5>
+										</div>
+									</div>
+								</div>
+						</div>
+
+						<div class="card second">
+							<div class="top" style="margin: 0 auto;">
+								<div class="img-cropper" style="border: 3px solid rgba(0, 251, 25, .3);">
+									<img src="/public/img/foto1.jpg" alt="user-image">
+								</div>
+									<h5>Jess Falloway</h5>
+							</div>
+
+							<div class="middle">
+								<h4>Coffee with Jess, the Breakfast Club</h4>
+								<div class="midwrap">
+									<i class="fas fa-clock"></i>
+									<h5>Friday, 17th August | 08:00 AM - 04:00 PM </h5>
+								</div>
+								<div class="midwrap">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<h5>Tenninson Way, Los Angelos, CA</h5>
+								</div>
+
+								<div class="bottom">
+									<h2>+48 154 902 687</h2>
+									<h5>jess.falloway@gmail.com</h5>
+									<h4>Contact</h4>
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+
+
+						<div class="card first">
+							<div class="top-image-area">
+								<img src="https://www.city.ac.uk/__data/assets/image/0009/328797/building-partnerships.jpg" alt="rocks-and-ocean">
+								<button class="button category" style="background: rgb(123, 176, 251)">School</button>
+							</div>
+							<div class="wrap-content">
+								<div class="first">
+									<div class="inner" style="height:105px;">
+										<h3>Exploring the beauty of wild cliffs</h3>
+										<p>Think about the breathtaking views, about the unfogettable moments, about the
+											memories that will stay with you forever...</p>
+									</div>
+									<hr>
+									</div>
+									<div class="second">
+										<div class="wrap">
+											<i class="fas fa-clock"></i>
+											<h5>Friday, 17th August | 08:00 AM - 04:00 PM </h5>
+										</div>
+										<div class="wrap">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<h5>Tenninson Way, Los Angelos, CA</h5>
+										</div>
+
+									</div>
+									<div class="third" style="margin: 0 auto;">
+										<div class="img-cropper" style="border: 3px solid rgba(0, 251, 25, .3);">
+											<img src="/public/img/james.jpeg" alt="user-image">
+										</div>
+										<div class="user">
+											<h5>James Banko</h5>
+											<h5>Writer</h5>
+										</div>
+									</div>
+								</div>
+						</div>
+
+						<div class="card first">
+							<div class="top-image-area">
+								<img src="/public/img/mountains.jpg" alt="rocks-and-ocean">
+								<button class="button category" style="background: rgb(123, 176, 251)">School</button>
+							</div>
+							<div class="wrap-content">
+								<div class="first">
+									<div class="inner" style="height:105px;">
+										<h3>Exploring the beauty of wild cliffs</h3>
+										<p>Think about the breathtaking views, about the unfogettable moments, about the
+											memories that will stay with you forever...</p>
+									</div>
+									<hr>
+									</div>
+									<div class="second">
+										<div class="wrap">
+											<i class="fas fa-clock"></i>
+											<h5>Friday, 17th August | 08:00 AM - 04:00 PM </h5>
+										</div>
+										<div class="wrap">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<h5>Tenninson Way, Los Angelos, CA</h5>
+										</div>
+										<div class="wrap">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+											<h5>Facebook Event</h5>
+										</div>
+										<hr>
+									</div>
+									<div class="third">
+										<div class="img-cropper">
+											<img src="https://i.pinimg.com/originals/b9/58/5a/b9585a9d1b20060f0d7e83c72eaa159f.jpg" alt="user-image">
+										</div>
+										<div class="user">
+											<h5>Jannette Blue</h5>
+											<h5>Host</h5>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+	</body>
+</html>
