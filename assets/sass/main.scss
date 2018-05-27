@@ -815,8 +815,6 @@ button:focus {
               padding: 0;
          }
          .right-menu-nav {
-          //     padding-top: 30px;
-
               padding-bottom: 0;
               display: block;
               text-align: center;
@@ -826,16 +824,13 @@ button:focus {
               width: 100%;
               transition: all .5s ease-in-out;
               &.open {
-                    // transition: max-height .5s ease-in-out;
                     height: 300px;
-                    // transform: translateY(20%);
               }
 
               li {
                 text-align: center;
                 width: 80%;
                 margin: 0;
-               //  margin-left: -80px;
                 &:nth-child(1) a{
                     margin-top: 35px;
                 }
@@ -845,7 +840,6 @@ button:focus {
                   color: #848899;
                   padding: 12px;
                   padding-left: 0;
-               //    border-bottom: 1px solid #e1e1e1;
                   display: block;
                   margin: 5px 0 0;
                   transition: all .4s ease-in-out;
@@ -856,7 +850,7 @@ button:focus {
                   }
 
 
-                }
+                    }
               }
          }
     }
@@ -1085,7 +1079,7 @@ button:focus {
               transition: all .5s ease-in-out;
               &.open {
                     // transition: max-height .5s ease-in-out;
-                    height: 300px;
+                    height: 100px;
                     // transform: translateY(20%);
               }
 
@@ -1099,23 +1093,20 @@ button:focus {
                 }
                 a {
 
-                  cursor: pointer;
-                  font-size: 20px;
-                  color: #919191;
-                  padding: 12px;
-                  padding-left: 0;
-               //    border-bottom: 1px solid #e1e1e1;
-                  display: block;
-                  margin: 5px 0 0;
-                  transition: all .4s ease-in-out;
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: #919191;
+                    padding: 12px;
+                    padding-left: 0;
+                    display: block;
+                    margin: 5px 0 0;
+                    transition: all .4s ease-in-out;
 
-                  &:hover {
+                    &:hover {
                        color: #c5c5c9;
                        font-size: 22px;
-                  }
-
-
-                }
+                    }
+               }
               }
          }
     }
